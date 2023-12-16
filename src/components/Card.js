@@ -1,5 +1,6 @@
 // Card.js
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Card = ({ title, images, onClick }) => {
   return (
@@ -7,7 +8,9 @@ const Card = ({ title, images, onClick }) => {
       <h3 className="card-title">Elige tu juego</h3>
       <div className="image-container">
         {images.map((image, index) => (
-          <img key={index} src={`/images/${image}`} alt={title}/>
+          <Link to={`/game-detail/${index + 4}`} key={index + 3}>
+            <img key={index} src={`/images/${image}`} alt={title}/>
+          </Link>
         ))}
       </div>
     </div>

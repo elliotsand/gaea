@@ -1,4 +1,8 @@
 /* App.css */
+a{
+  text-decoration: none;
+  color:#222
+}
 .App {
   text-align: center;
 }
@@ -87,7 +91,8 @@ footer {
 /* Estilos para la sección de contacto */
 .Contact {
   text-align: center;
-  margin-top: 80px; /* Puedes ajustar el espacio según sea necesario */
+  max-width: 400px;
+  margin: 0 auto;
 }
 
 .Contact form {
@@ -112,6 +117,12 @@ footer {
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
+  box-sizing: border-box;
+}
+.error {
+  color: red;
+  font-size: 14px;
+  margin-left: 5px;
 }
 
 .Contact button {

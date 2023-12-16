@@ -1,50 +1,76 @@
-// Catalog.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Catalog = () => {
-  // Array con las imágenes
-  const images = [
-    "rcs_DEW7.png",
-    "rcs_DEW8.png",
-    "rcs_DEW9.png",
-    "rcs_DEW10.png",
-    "rcs_DEW11.png",
-    "rcs_DEW12.png",
-  ];
+  const [gamesData, setGamesData] = useState([]);
+  const [topImages, setTopImages] = useState([]);
+  const [bottomImages, setBottomImages] = useState([]);
+  const [searchTerm, setSearchTerm] = useState('');
 
-  // Dividir el array en dos partes (arriba y abajo)
-  const topImages = images.slice(0, 3);
-  const bottomImages = images.slice(3);
+  useEffect(() => {
+    fetch('games.json')
+      .then(response => response.json())
+      .then(data => {
+        setGamesData(data);
+        // Dividir el array en dos partes (arriba y abajo)
+        setTopImages(data.slice(0, 3));
+        setBottomImages(data.slice(3));
+      })
+      .catch(error => console.error('Error loading games data:', error));
+  }, []);
+
+  if (gamesData.length === 0) {
+    return <p>Cargando...</p>;
+  }
+
+  // Filtrar juegos por título
+  const filteredTopImages = topImages.filter(game => game.title.toLowerCase().includes(searchTerm.toLowerCase()));
+  const filteredBottomImages = bottomImages.filter(game => game.title.toLowerCase().includes(searchTerm.toLowerCase()));
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <div style={{ margin: '10px 0' }}>
-        <input type="text" placeholder="Buscar juego" />
+        <input
+          type="text"
+          placeholder="Buscar juego"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
       </div>
       <div style={{ display: 'flex', justifyContent: 'center' }}>
-        {/* Mostrar las primeras tres imágenes arriba */}
-        {topImages.map((image, index) => (
-          <img
-            key={index}
-            src={`/images/${image}`}
-            alt={`Juego ${index + 1}`}
-            onClick={() => {/* Lógica de mostrar detalles */}}
-            style={{ marginRight: '10px', marginBottom: '10px' }}
-            title={`Juego ${index + 1}`} // Agregar el atributo title
-          />
+        {filteredTopImages.map((game) => (
+          <div key={game.id} style={{
+            margin: '10px', display: 'block', borderRadius: '13px', padding: '15px',
+            background: 'linear-gradient(180deg, rgba(33, 33, 33, 0.80) 33.1%, rgba(33, 33, 33, 0.00) 99.89%)'
+          }}>
+            <Link to={`/game-detail/${game.id}`}>
+              <img
+                src={`/images/${game.miniatura}`}
+                alt={`Juego ${game.id} - Miniatura`}
+                style={{ marginBottom: '10px' }}
+                title={`Juego ${game.id} - Miniatura`}
+              />
+              <h3 style={{ textAlign: 'center', textDecoration: 'none' }}>{game.title}</h3>
+            </Link>
+          </div>
         ))}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
-        {/* Mostrar las siguientes tres imágenes abajo */}
-        {bottomImages.map((image, index) => (
-          <img
-            key={index + 3}
-            src={`/images/${image}`}
-            alt={`Juego ${index + 4}`}
-            onClick={() => {/* Lógica de mostrar detalles */}}
-            style={{ marginRight: '10px', marginTop: '10px' }}
-            title={`Juego ${index + 4}`} // Agregar el atributo title
-          />
+        {filteredBottomImages.map((game) => (
+          <div key={game.id} style={{
+            margin: '10px', display: 'block', borderRadius: '13px', padding: '15px',
+            background: 'linear-gradient(180deg, rgba(33, 33, 33, 0.80) 33.1%, rgba(33, 33, 33, 0.00) 99.89%)'
+          }}>
+            <Link to={`/game-detail/${game.id}`}>
+              <img
+                src={`/images/${game.miniatura}`}
+                alt={`Juego ${game.id} - Miniatura`}
+                style={{ marginBottom: '10px' }}
+                title={`Juego ${game.id} - Miniatura`}
+              />
+              <h3 style={{ textAlign: 'center', textDecoration: 'none' }}>{game.title}</h3>
+            </Link>
+          </div>
         ))}
       </div>
     </div>
