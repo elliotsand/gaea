@@ -7,8 +7,8 @@
     "images": [
       "rcs_DEW1.png"
     ],
-    "description": "Una emocionante aventura de supervivencia en un mundo postapocalíptico.",
-    "requisitos": "Requisitos mínimos: Procesador quad-core, 8GB de RAM, Tarjeta gráfica dedicada.",
+    "description": "\n\nConoce la emocionante historia y a los entrañables personajes de The Last of Us, ganador de más de 200 premios del Juego del año.\n\nEn una civilización devastada, donde los infectados y los empedernidos sobrevivientes proliferan, Joel, un protagonista cansado, es contratado para rescatar de contrabando a una niña de 14 años llamada Ellie de una zona de cuarentena militar. Sin embargo, lo que comienza como un pequeño trabajo pronto se transforma en una brutal travesía por todo el país.\n\nIncluye la historia completa para un solo jugador de The Last of Us y el aclamado capítulo de precuela, Left Behind, que explora los eventos que cambiaron para siempre las vidas de Ellie y su mejor amiga, Riley.\n",
+    "requisitos": "Requisitos mínimos: Procesador quad-core, 8GB de RAM, Tarjeta gráfica dedicada.\nRequisitos recomendados: AMD Ryzen 5 3600X, 16 GB de RAM, AMD Radeon RX 5700 XT (8 GB).",
     "rating": 4.5,
     "categoria": "Aventura",
     "genero": "Acción"
@@ -22,8 +22,8 @@
       "rcs_DEW2.png",
       "rcs_DEW8.png"
     ],
-    "description": "Un juego de horror y supervivencia en un mundo invadido por zombis.",
-    "requisitos": "Requisitos mínimos: Procesador dual-core, 4GB de RAM, Tarjeta gráfica compatible con DirectX 10.",
+    "description": "Deadlight: Director's Cut nos traslada a un 1986 alternativo, en el que el mundo se ha convertido en un lugar apocalíptico en el que el futuro se ha desvanecido. La nueva versión del videojuego de aventura apocalíptico, contará con mejores controles, nuevas animaciones y una resolución mejorada de 1080p. Además, se ha incluido un nuevo modo de juego, llamado Survival Arena, que nos presentará desafíos mayores a los vistos en el juego original.",
+    "requisitos": "Requisitos mínimos: Procesador dual-core, 4GB de RAM, Tarjeta gráfica compatible con DirectX 10.\nRequisitos recomendados: Intel Core i7-8700, 8 GB de RAM, AMD Radeon RX 5700 XT (8 GB).",
     "rating": 3.8,
     "categoria": "Survival Horror",
     "genero": "Terror"
@@ -38,8 +38,8 @@
       "rcs_DEW11.png",
       "rcs_DEW12.png"
     ],
-    "description": "Left 4 Dead 2 es un shooter cooperativo en primera persona con acción intensa.",
-    "requisitos": "Requisitos mínimos: Procesador dual-core, 2GB de RAM, Tarjeta gráfica compatible con DirectX 9.",
+    "description": "Ambientado en el apocalipsis zombi, Left 4 Dead 2 (L4D2) es la esperadísima secuela del galardonado Left 4 Dead, el juego cooperativo número 1 de 2008.\nEste FPS cooperativo de acción y terror os llevará a ti y a tus amigos por las ciudades, pantanos y cementerios del Sur Profundo, desde Savannah hasta Nueva Orleans, a lo largo de cinco extensas campañas.\nJugarás como uno de los cuatro nuevos supervivientes, armado con un amplio y devastador arsenal de armas clásicas y mejoradas. Además de las armas de fuego, también tendrás la oportunidad de masacrar a los infectados con diversas armas de combate cuerpo a cuerpo, desde motosierras hasta hachas, e incluso una mortífera sartén.\nPondrás a prueba estas armas contra tres espantosos y formidables nuevos infectados especiales (o jugarás como ellos en el modo Enfrentamiento). También te encontrarás con cinco nuevos infectados comunes no comunes, incluyendo a los aterradores embarrados.",
+    "requisitos": "Requisitos mínimos: Procesador dual-core, 2GB de RAM, Tarjeta gráfica compatible con DirectX 9.\nRequisitos recomendados: Intel Core i7-8700, 4 GB de RAM, AMD Radeon RX 5700 XT (8 GB).",
     "rating": 4.2,
     "categoria": "Shooter",
     "genero": "Acción"
@@ -54,15 +54,15 @@
       "rcs_DEW11.png",
       "rcs_DEW12.png"
     ],
-    "description": "Grand Theft Auto V es un juego de mundo abierto lleno de acción y aventuras.",
-    "requisitos": "Requisitos mínimos: Procesador quad-core, 8GB de RAM, Tarjeta gráfica dedicada.",
+    "description": "Grand Theft Auto V es un juego de mundo abierto lleno de acción y aventuras.GTA V se ambienta en Los Santos, ciudad ficticia basada en Los Angeles. En cuanto a GTA Online, el multijugador permite hasta 30 jugadores en línea para explorar el mapeado del juego y disputar distintas misiones de forma cooperativa y/o competitiva, además de celebrarse diferentes eventos para mantener la comunidad de GTA VI activa. Actualmente, se rumorea que el juego podría tener un DLC de historia (una expansión argumental) protagonizada por un nuevo personaje, aunque de momento Rockstar no se ha pronunciado.",
+    "requisitos": "Requisitos mínimos: Procesador quad-core, 8GB de RAM, Tarjeta gráfica dedicada.\nRequisitos recomendados: AMD Ryzen 5 3600X, 16 GB de RAM, AMD Radeon RX 5700 XT (8 GB).",
     "rating": 4.8,
     "categoria": "Mundo Abierto",
     "genero": "Acción"
   },
   {
     "id": 5,
-    "title": "Resident Evil",
+    "title": "Resident Evil 4",
     "portada": "rcs_DEW5.png",
     "miniatura": "rcs_DEW11.png",
     "images": [
@@ -70,8 +70,8 @@
       "rcs_DEW11.png",
       "rcs_DEW12.png"
     ],
-    "description": "Enfréntate a horrores biológicos en este clásico del survival horror.",
-    "requisitos": "Requisitos mínimos: Procesador dual-core, 4GB de RAM, Tarjeta gráfica compatible con DirectX 10.",
+    "description": "Resident Evil 4 llega a Xbox One en Full 1080p HD con aún más imágenes por segundo. Esta obra maestra revolucionaria supuso un punto de inflexión en la franquicia, puesto que por primera vez se empleó la perspectiva de tercera persona por encima del hombro. Con una emocionante trama que transcurre tras la destrucción de Umbrella Corporation, Resident Evil 4 no solo cambió para siempre la franquicia Resident Evil, sino que revolucionó todo el género.",
+    "requisitos": "Requisitos mínimos: Procesador dual-core, 4GB de RAM, Tarjeta gráfica compatible con DirectX 10.\nRequisitos recomendados: Intel Core i7-8700, 4 GB de RAM, AMD Radeon RX 5700 XT (8 GB).",
     "rating": 4.0,
     "categoria": "Survival Horror",
     "genero": "Terror"
@@ -86,8 +86,8 @@
       "rcs_DEW11.png",
       "rcs_DEW12.png"
     ],
-    "description": "Acompaña a Lara Croft en una emocionante búsqueda arqueológica.",
-    "requisitos": "Requisitos mínimos: Procesador dual-core, 2GB de RAM, Tarjeta gráfica compatible con DirectX 9.",
+    "description": "Tomb Raider relata los intensos y conflictivos orígenes de Lara Croft y su transformación de joven asustadiza a endurecida superviviente. Lara, que solo cuenta con sus instintos y su habilidad para superar los límites de la resistencia humana, tendrá que aclarar la historia tenebrosa de una isla olvidada para escapar de su acoso implacable. Descárgate el tráiler Turning Point para ver el comienzo de la aventura legendaria de Lara.",
+    "requisitos": "Requisitos mínimos: Procesador dual-core, 2GB de RAM, Tarjeta gráfica compatible con DirectX 9.\nRequisitos recomendados: Intel Core i5-750, 4 GB de RAM, 1GB Video RAM: AMD Radeon HD 5870, nVidia GTX 480.",
     "rating": 4.3,
     "categoria": "Aventura",
     "genero": "Acción-Aventura"

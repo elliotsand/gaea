@@ -18,8 +18,8 @@ a{
 }
 
 .App-logo {
-  height: 60px; 
-  margin-bottom: 10px; 
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 /* Centrar la navegación */
@@ -27,13 +27,13 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333; 
-  height: 50px; 
+  background-color: #333;
+  height: 50px;
 }
 
 nav a {
-  margin: 0 15px; 
-  color: #fff; 
+  margin: 0 15px;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -41,7 +41,7 @@ nav a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 400px; 
+  height: 400px;
   margin-top: 80px;
 }
 
@@ -51,17 +51,17 @@ nav a {
 }
 
 .card-title {
-  background-color: #333; 
-  color: white; 
-  padding: 10px; 
+  background-color: #333;
+  color: white;
+  padding: 10px;
 }
 
 
 .image-container {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
-  margin-top: 20px; 
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 .image-container img {
