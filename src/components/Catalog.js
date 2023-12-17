@@ -12,7 +12,6 @@ const Catalog = () => {
       .then(response => response.json())
       .then(data => {
         setGamesData(data);
-        // Dividir el array en dos partes (arriba y abajo)
         setTopImages(data.slice(0, 3));
         setBottomImages(data.slice(3));
       })
@@ -23,7 +22,6 @@ const Catalog = () => {
     return <p>Cargando...</p>;
   }
 
-  // Filtrar juegos por título
   const filteredTopImages = topImages.filter(game => game.title.toLowerCase().includes(searchTerm.toLowerCase()));
   const filteredBottomImages = bottomImages.filter(game => game.title.toLowerCase().includes(searchTerm.toLowerCase()));
 

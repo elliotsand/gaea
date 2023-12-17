@@ -18,12 +18,25 @@ const Contact = () => {
     celular: '',
     email: '',
   });
-
+  const [formSubmitted, setFormSubmitted] = useState(false);
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prevData) => ({ ...prevData, [name]: value }));
+
+    let processedValue = value;
+
+    if (name === 'dni') {
+      const numericValue = value.replace(/\D/g, '');
+      processedValue = numericValue.slice(0, 8);
+    }
+    if (name === 'celular') {
+      const numericValue = value.replace(/\D/g, '');
+      processedValue = numericValue.slice(0, 9);
+    }
+
+    setFormData((prevData) => ({ ...prevData, [name]: processedValue }));
     setErrors((prevErrors) => ({ ...prevErrors, [name]: '' }));
   };
+
 
   const validateForm = () => {
     let valid = true;
@@ -72,16 +85,22 @@ const Contact = () => {
     e.preventDefault();
 
     if (validateForm()) {
-      // Lógica para enviar datos, puedes imprimir en la consola para verificar
       console.log('Formulario enviado:', formData);
-      // Puedes agregar aquí la lógica para enviar la información al servidor o realizar otras acciones
+      setFormSubmitted(true);
     } else {
       console.log('Formulario inválido. Por favor, corrige los errores.');
     }
   };
+
   return (
     <div className="Contact">
       <h2>Contacto</h2>
+      {formSubmitted ? (
+        <div>
+          <p>¡Gracias por enviar el formulario!</p>
+          {/* Puedes agregar más contenido o redirigir al usuario a otra página aquí */}
+        </div>
+      ) : (
       <form onSubmit={handleSubmit}>
         <label>
           Nombre:
@@ -97,13 +116,23 @@ const Contact = () => {
         <br/>
         <label>
           DNI:
-          <input type="text" name="dni" value={formData.dni} onChange={handleChange}/>
+          <input
+            type="text"
+            name="dni"
+            value={formData.dni}
+            onChange={handleChange}
+            maxLength="8"
+          />
           <span className="error">{errors.dni}</span>
         </label>
         <br/>
         <label>
           Celular:
-          <input type="text" name="celular" value={formData.celular} onChange={handleChange}/>
+          <input type="text"
+                 name="celular"
+                 value={formData.celular}
+                 onChange={handleChange}
+                 maxLength="9"/>
           <span className="error">{errors.celular}</span>
         </label>
         <br/>
@@ -120,7 +149,7 @@ const Contact = () => {
         </label>
         <br/>
         <button type="submit">Enviar</button>
-      </form>
+      </form> )}
     </div>
   );
 };

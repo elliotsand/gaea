@@ -8,7 +8,7 @@ const Card = ({ title, images, onClick }) => {
       <h3 className="card-title">Elige tu juego</h3>
       <div className="image-container">
         {images.map((image, index) => (
-          <Link to={`/game-detail/${index + 4}`} key={index + 3}>
+          <Link to={`/game-detail/${index + 1 }`} >
             <img key={index} src={`/images/${image}`} alt={title}/>
           </Link>
         ))}
