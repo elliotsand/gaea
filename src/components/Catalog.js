@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import {Link, Outlet} from 'react-router-dom';
 
 const Catalog = () => {
   const [gamesData, setGamesData] = useState([]);
@@ -71,6 +71,7 @@ const Catalog = () => {
           </div>
         ))}
       </div>
+      <Outlet />
     </div>
   );
 };
